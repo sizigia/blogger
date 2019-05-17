@@ -9,7 +9,9 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
-  def create; end
+  def create
+    raise
+  end
 
   def show
     @article = Article.find(params[:id])

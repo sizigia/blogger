@@ -2,15 +2,15 @@
 
 <%= form_for [@article, @comment] do |f| %>
 <p>
-  <%= f.label :author_name %><br>
+  <%= f.label :author_name, "Your Name" %><br>
   <%= f.text_field :author_name %>
 </p>
 <p>
-  <%= f.label :author_email %><br>
+  <%= f.label :author_email, "Your e-mail" %><br>
   <%= f.text_field :author_email %>
 </p>
 <p>
-  <%= f.label :body %><br>
+  <%= f.label :body, "Your Comment (be nice, we're humans too)" %><br>
   <%= f.text_field :body %>
 </p>
 <p>

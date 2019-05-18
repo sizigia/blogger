@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
+  include ArticlesHelper
   def index
     @articles = Article.all
   end

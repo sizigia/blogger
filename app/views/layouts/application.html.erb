@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TopBlogger</title>
+    <title>Whops, Another Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-  <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
+  <div class="left-navbar">
+    <h1>Whops,<br>Another Blog</h1>
+    <div class="tags"><%= link_to "Explore Tags", tags_path %></div>
+    <p class="flash"><%= flash.notice %></p>
+    <div class="back"><%= link_to "<< Back to Articles List", articles_path %></div>
+  </div>
+  
+  <div class="embody"><%= yield %></div>
   </body>
 </html>

@@ -1,4 +1,7 @@
+<div class="top-embody">
 <h1>All Articles</h1>
+<p><%= link_to "Create a New Article", new_article_path, class: 'new_article' %></p>
+</div>
 
 <div id="articles">
   <% @articles.each do |article| %>
@@ -8,4 +11,4 @@
   <% end %>
 </div>
 
-<%= link_to "Create a New Article", new_article_path, class: 'new_article' %><br>
+

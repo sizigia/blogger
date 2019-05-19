@@ -7,16 +7,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anonymous+Pro|Ubuntu&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
   <div class="left-navbar">
-    <h1>Whops,<br>Another Blog</h1>
+    <h1>Whops,<br>Another<br>Blog</h1>
+    <div class="flash"><p><%= flash.notice %></p></div>
+    <div class="bottom-navbar">
     <div class="tags"><%= link_to "Explore Tags", tags_path %></div>
-    <p class="flash"><%= flash.notice %></p>
-    <div class="back"><%= link_to "<< Back to Articles List", articles_path %></div>
+    <div class="back"><%= link_to "Explore Articles", articles_path %></div>
+    </div>
   </div>
   
   <div class="embody"><%= yield %></div>

@@ -1,3 +1,4 @@
+<div class="top-embody">
 <h1><%= @article.title %></h1>
 <p>
   Tags:
@@ -5,6 +6,7 @@
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
+</div>
 
 <p><%= @article.body %></p>
 

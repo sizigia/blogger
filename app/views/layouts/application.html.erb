@@ -16,6 +16,13 @@
     <h1>Whops,<br>Another<br>Blog</h1>
     <div class="flash"><p><%= flash.notice %></p></div>
     <div class="bottom-navbar">
+    <div class="login">
+      <% if logged_in? %>
+        <%= "Logged in as #{current_user.email}" %>
+      <% else %>
+        Logged out
+      <% end %>
+    </div>
     <div class="tags"><%= link_to "Explore Tags", tags_path %></div>
     <div class="back"><%= link_to "Explore Articles", articles_path %></div>
     </div>

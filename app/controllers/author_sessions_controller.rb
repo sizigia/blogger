@@ -9,7 +9,7 @@ class AuthorSessionsController < ApplicationController
       redirect_back_or_to articles_path
     else
       flash.notice = 'Login failed.'
-      redirect_to new_author_url
+      render action: :new
     end
   end
 

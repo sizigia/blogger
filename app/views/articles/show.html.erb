@@ -9,11 +9,12 @@
 </div>
 
 <p><%= @article.body %></p>
-
+<% if logged_in? %>
 <div class="article-options">
 <%= link_to "Edit Article", edit_article_path(@article) %>
 <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete the article?"} %><br>
 </div>
+<% end %>
 
 <h3>Comments (<%= @article.comments.size %>)</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>

@@ -1,6 +1,8 @@
 <div class="top-embody">
 <h1>All Articles</h1>
+<% if logged_in? %>
 <p><%= link_to "Create a New Article", new_article_path, class: 'new_article' %></p>
+<% end %>
 </div>
 
 <div id="articles">

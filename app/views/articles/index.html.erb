@@ -1,11 +1,11 @@
 <div class="top-embody">
   <h1>All Articles</h1>
-  <% if logged_in? %>
-    <p><%= link_to "Create a New Article", new_article_path, class: 'new_article' %></p>
-  <% end %>
 </div>
+<% if logged_in? %>
+    <%= link_to "Create a New Article", new_article_path, class: 'new_article' %>
+  <% end %>
 
-<div id="articles">
+<div class="articles">
   <% @articles.each do |article| %>
     <div class="article">
       <%= link_to article.title, article_path(article) %>

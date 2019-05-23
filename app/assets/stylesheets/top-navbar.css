@@ -8,10 +8,13 @@
 .top-navbar * {
   padding: 10px;
   flex-grow: 0.5;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 .title {
   flex-grow: 3;
+  font-weight: 100;
   font-size: 40px;
   font-family: 'Abril Fatface', cursive;
+  
 }

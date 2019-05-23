@@ -1,16 +1,17 @@
 .top-navbar{
   background: #A0D5FD;
   grid-area: 1/1/2/4;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  align-items: flex-end;
 }
 
 .top-navbar * {
   padding: 10px;
+  flex-grow: 0.5;
 }
 
 .title {
+  flex-grow: 3;
   font-size: 40px;
   font-family: 'Abril Fatface', cursive;
 }

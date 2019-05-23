@@ -1,21 +1,24 @@
 <div class="top-embody">
-<h1><%= @article.title %></h1>
-<p>
-  Tags:
-  <% @article.tags.each do |tag| %>
-    <%= link_to tag.name, tag_path(tag) %>
+  <h1><%= @article.title %></h1>
+  <p>Tags:
+    <% @article.tags.each do |tag| %>
+      <%= link_to tag.name, tag_path(tag) %>
+    <% end %>
+  </p>
+</div>
+
+<div class="article">
+  <p><%= @article.body %></p>
+  <% if logged_in? %>
+  <div class="article-options">
+    <%= link_to "Edit Article", edit_article_path(@article) %>
+    <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete the article?"} %><br>
+  </div>
   <% end %>
-</p>
 </div>
 
-<p><%= @article.body %></p>
-<% if logged_in? %>
-<div class="article-options">
-<%= link_to "Edit Article", edit_article_path(@article) %>
-<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete the article?"} %><br>
+<div class="comments">
+  <h3>Comments (<%= @article.comments.size %>)</h3>
+    <%= render partial: 'articles/comment', collection: @article.comments %>
+    <%= render partial: 'comments/form' %>
 </div>
-<% end %>
-
-<h3>Comments (<%= @article.comments.size %>)</h3>
-<%= render partial: 'articles/comment', collection: @article.comments %>
-<%= render partial: 'comments/form' %>

@@ -3,25 +3,27 @@
   <% @article.errors.full_messages.each do |error| %>
     <li><%= error %></li>
   <% end %>
-  </ul>
 
-  <p>
+  <li>
     <%= f.label :title %><br>
     <%= f.text_area :title %>
-  </p>
+    <span>Be memorable!</span>
+  </li>
 
-  <p>
+  <li>
     <%= f.label :body %><br>
-    <%= f.text_area :body%>
-  </p>
+    <%= f.text_area :body%><br>
+    <span>Be legendary!</span>
+  </li>
 
-  <p>
+  <li>
     <%= f.label :tag_list %><br>
-    <%= f.text_field :tag_list %>
-  </p>
+    <%= f.text_field :tag_list %><br>
+    <span>Main topics over here.</span>
+  </li>
 
-  <p>
+  <li>
     <%= f.submit %>
-  </p>
-
+  </li>
+  </ul>
 <% end %>

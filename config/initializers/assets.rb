@@ -13,6 +13,8 @@ Rails.application.config.assets.precompile += %w[reset.css]
 Rails.application.config.assets.precompile += %w[top-navbar.css]
 Rails.application.config.assets.precompile += %w[fonts.css]
 Rails.application.config.assets.precompile += %w[colors.css]
+Rails.application.config.assets.precompile += %w[reset-form.css]
+Rails.application.config.assets.precompile += %w[forms.css]
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

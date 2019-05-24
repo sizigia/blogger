@@ -1,20 +1,15 @@
 .top-navbar{
-  background: #A0D5FD;
   grid-area: 1/1/2/4;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  border-bottom: solid;
 }
 
 .top-navbar * {
   padding: 10px;
   flex-grow: 0.5;
-  font-family: 'Anonymous Pro', monospace;
 }
 
 .title {
   flex-grow: 3;
-  font-weight: 100;
-  font-size: 40px;
-  font-family: 'Abril Fatface', cursive;
-  
 }

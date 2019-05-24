@@ -1,0 +1,29 @@
+body, .top-navbar * {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 60pt;
+  font-weight: bold;
+}
+
+.top-embody {
+  text-transform: uppercase;
+  font-size: 30pt;
+  font-weight: bolder;
+  letter-spacing: 0.110em;
+}
+
+.embody, .top-embody p, .new_article {
+  font-size: 14pt;
+}
+
+.new_article {
+  text-decoration: underline;
+}
+
+.comments p {
+  font-size: 13pt;
+}

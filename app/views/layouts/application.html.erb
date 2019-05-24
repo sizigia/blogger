@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Whops, Another Blog</title>
+    <title>Blog Me Out~</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', 'top-navbar', 'reset', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'colors', 'fonts', 'top-navbar', 'reset', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anonymous+Pro|Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
   <div class="top-navbar">
-    <h1 class="title">Whops,<br>Another Blog</h1>
+    <h1 class="title">Blog Me Out~</h1>
     <div class="flash"><p><%= flash.notice %></p></div>
     <div class="login">
       <% if logged_in? %>
@@ -29,6 +29,10 @@
   
   <div class="embody">
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <p>Made by <a href="https://twitter.com/miss_sizigia">Faustina</a> with 💖 and <a href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a>.</p>
   </div>
   </body>
 </html>

@@ -1,0 +1,24 @@
+:root {
+  --color1: #2D3B48;
+  --color2: #b4b8bb;
+  --color3: #CA927B;
+}
+
+body {
+  background: var(--color3);
+  color: var(--color3);
+}
+
+.top-navbar {
+  background: var(--color1);
+  color: var(--color3);
+}
+
+.embody {
+  background: var(--color2);
+  color: var(--color1);
+}
+
+.footer {
+  color: var(--color1);
+}

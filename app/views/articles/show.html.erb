@@ -9,6 +9,9 @@
 
 <div class="article">
   <p><%= @article.body %></p>
+</div>
+
+<div class="backopt">
   <% if logged_in? %>
   <div class="article-options">
     <%= link_to "Edit Article", edit_article_path(@article) %>
